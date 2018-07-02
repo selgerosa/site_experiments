@@ -1,0 +1,59 @@
+/* ========================================
+ * CSS written here will override Tachyons
+ * ======================================== */
+
+.hot {
+  filter:hue-rotate(90deg);
+}
+.warm {
+  filter: hue-rotate(180deg);
+}
+.cold {
+  filter: hue-rotate(45deg);
+}
+
+.clouds_cold, .clouds_hot, .clouds_warm, .clear_cold, .clear_hot, .clear_warm, .drizzle_cold, .drizzle_hot, .drizzle_warm, .rain_cold, .rain_hot, .rain_warm, .snow_cold, .snow_hot, .snow_warm, .thunderstorm_cold, .thunderstorm_hot, .thunderstorm_warm {
+  display: none;
+}
+
+
+#bg {
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  position: absolute;
+}
+
+#bg img {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.content {
+  z-index: 1;
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: white;
+  text-shadow:
+       1px 1px 0 #000,
+     -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+h1 {
+  font-size: 3vw;
+}
+p {
+  margin: 0;
+}
+
+@media all and(max-width:320px;) {
+  h1 {
+    font-size: 5vw;
+  }
+}

@@ -1,0 +1,16 @@
+.h1, .h2{
+  min-height: 80vh;
+  background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.h1 {
+  background-image: url('harpo1.png');
+}
+.h2 {
+  background-image: url('harpo2.png');
+}
+.hand img {
+  width: 100vw;
+}

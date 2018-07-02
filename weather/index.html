@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Set a page title -->
+    <title>Weather</title>
+
+    <!-- Site Styles -->
+    <link rel="stylesheet" href="css/tachyons.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+  </head>
+
+  <body>
+
+      <div id="bg" >
+      </div>
+      <div class=" content flex justify-center items-center flex-column w-100 h-100" >
+        <!-- If there is an error, this box is shown. 'dn' is the only required class -->
+        <div id="error" class="dn white pa4 fixed bottom-0 w-100 h-100 tc">
+          Sorry, we couldn't find that city.
+        </div>
+
+      <!-- Search Box -->
+      <form id="location-search" class=" content flex items-center justify-center w-100 h-100">
+        <h1 class="content flex flex-wrap items-baseline">
+          <span class="mr3 mb2">
+            Weather for:
+          </span>
+          <input type="text" id="area" value="Boston" class="flex-auto">
+        </h1>
+      </form>
+
+      <!-- Content -->
+      <div class="flex content flex-wrap w-90">
+        <div class="w-100 fixed bottom-0 flex flex-row right--1">
+          <h3 class="ma3 "><strong>Location </strong></h3>
+          <p class="ma3 "><span id="location-name"></span></p>
+          <p class="ma3 "><span id="country"></span></p>
+        </div>
+
+        <div class="w-100 fixed top-0 right--1">
+          <h2>Temperature</h2>
+          <p>Current Temp: <span id="temp"></span></p>
+          <p>Max Temp: <span id="temp-max"></span></p>
+          <p>Min Temp: <span id="temp-min"></span></p>
+        </div>
+
+        <span id="condition" class="dn"></span><span id="condition-description" class="dn"></span><span id="wind-speed" class="dn"></span>
+
+    </div>
+
+    <!-- Site JavaScript -->
+    <script src="javascript/toggleClass.js" charset="utf-8"></script>
+    <script src="javascript/main.js" charset="utf-8"></script>
+    <script src="javascript/weather.js" charset="utf-8"></script>
+  </body>
+
+</html>

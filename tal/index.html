@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>opinion</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <div class="parent">
+    <header><h1>What's your opinion?</h1></header>
+
+    <span id="time" >09:00 </span>
+    <div class="child">
+      <div class="col1">
+      <a href=""><h2 id="a"></h2></a>
+    </div>
+      <h2><a id="or">  or  </a></h2>
+      <div class="col2">
+      <a href=""><h2 id="b"></h2></a>
+    </div>
+    </div>
+    <h3><a href="lose.html">I can't choose</a></h3>
+  </div>
+</body>
+<script>
+  var s =9;
+  var ms = 100;
+  var count =900;
+  var counter = setInterval(timer, 10); //10 will  run it every 100th of a second
+  function timer()
+  {
+    if (count <= 0) {
+        clearInterval(counter);
+        return;
+     }
+     ms--;
+     if(ms==0) {
+       s--;
+       ms=100;
+     }
+     document.getElementById("time").innerHTML= "0" +s + ":" + ms;
+  }
+  function picker() {
+    var words = ['cat','dog','chair','blue','red','smile','frown','faith','trust','security','winter','summer','pull the lever','let the trolley pass','kill the baby to save everyone','take the moral high ground','truth','honesty','fact','justice','table','salt','sugar','cake','pie','chips','push the fat man','kill the patient to save 5 people','don\'t kill the patient and let 5 people die','tell your friend about her cheating fiance','keep a secret','choose between your children to save yourself','work','play','authoritarian','libertarian','left','right','hope','realism','absurdism','nostaliga','pizza','pasta','lover','fighter','respect','piety','freedom','forest','desert','ocean','mountain','snow','rain','sun','moon','stars','chocolate','change the trolley track','bath','shower','swimming','running','sneakers','sandals','taco','hamburger','pen','pencil','coke','pepsi','happiness','complacency','ignorance','depression','kale','liquor','cigarettes','weed','beer','diversity','comfort','teamwork','leader','follower','pirate','ninja','book','movie','abstract','grounded'];
+    var rand = words[Math.floor(Math.random() * words.length)];
+    document.getElementById("a").innerHTML = rand;
+    var rand = words[Math.floor(Math.random() * words.length)];
+    document.getElementById("b").innerHTML = rand;
+    if (document.getElementById("b").innerHTML === document.getElementById("a").innerHTML) {
+      var rand = words[Math.floor(Math.random() * words.length)];
+      document.getElementById("b").innerHTML = rand;
+    }
+  }
+    var or = document.getElementById('or');
+    or.onmouseover = function() {
+    setTimeout(function() {
+      document.location.href='win.html'
+    }, 3000); // 1000ms = 1s delay
+    };
+
+  picker();
+  timer();
+  setTimeout(function(){window.location.href='lose.html'},10000);</script>
+</script>

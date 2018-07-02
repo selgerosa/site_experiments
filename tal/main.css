@@ -1,0 +1,91 @@
+body {
+  background-color:Black;
+  color:white;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 10vw;
+  margin:3vh;
+}
+
+h2 {
+  font-size: 6vw;
+  margin-bottom: 0;
+  margin-top: 1vh;
+}
+
+h3 {font-size: 3vw;}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  cursor: crosshair;
+}
+#time {
+  font-size: 7vw;
+  color:red;
+  text-align: center;
+  margin-bottom: 0;
+}
+.flasherstyle {
+  font-size: 20vw;
+  transform:scale(1,2.5);
+  padding-top: 10vh;
+  margin-bottom: 0;
+}
+.flasher {
+  color: yellow;
+  -webkit-animation: Flash .12s linear infinite alternate;
+  -moz-animation: Flash .12s linear infinite alternate;
+  -o-animation: Flash .12s linear infinite alternate;
+  animation: Flash .12s linear infinite;
+}
+.small:hover {color: yellow;
+-webkit-animation: Flash .12s linear infinite alternate;
+-moz-animation: Flash .12s linear infinite alternate;
+-o-animation: Flash .12s linear infinite alternate;
+animation: Flash .12s linear infinite;}
+.lock {
+  position: absolute;
+  bottom:0;
+  margin-bottom: 0vh;
+}
+
+-webkit-@keyframes Flash { to { -webkit-color: red;} }
+-moz-@keyframes Flash { to { -moz-color: red;} }
+-o-@keyframes Flash { to { -o-color: red;} }
+@keyframes Flash { to { color: red;} }
+
+/*flex box bits */
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width:80vw;
+  text-align: center;
+}
+
+.col1 {
+  display: flex;
+  align-items: center;
+  max-width:40vw;
+  text-align: center;
+}
+.col2 {
+  display: flex;
+  max-width:40vw;
+  text-align: center;
+  align-content: flex-end;
+  align-items: flex-end;
+}

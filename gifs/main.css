@@ -1,0 +1,191 @@
+img {
+  width:5vw;
+  padding-left: 1vw;
+  padding-bottom: 1vw;
+}
+
+a {
+  color: black;
+}
+a:hover {cursor:crosshair;}
+
+button {
+  font-family: Helvetica;
+  font-size: 5vw;
+  border: none;
+  outline: none;
+  background-color: white;
+  cursor: crosshair;
+  width:6vw;
+  height:4vw;
+  margin-right: 2vw;
+}
+
+button:active {
+  filter: brightness(85%);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10vh;
+  padding-top: 2vh;
+}
+
+body {
+  padding-left: 2vw;
+  padding-right: 1vw;
+}
+
+h1 {
+  font-family: helvetica;
+  font-size: 20vw;
+  margin-top: 5vh;
+  margin-bottom: 0vh;;
+  text-align: center;
+}
+
+h3 {
+  font-family: helvetica;
+  font-size: 3vw;
+  text-align: center;
+  margin: 1vw;
+  margin-right: 1vw;
+}
+
+.splash {
+  width:90vw;
+  height:90vh;
+  color: White;
+  background-image: url("img/156.gif");
+  -webkit-animation: transition 2s linear infinite alternate;
+  -moz-animation: transition 2s linear infinite alternate;
+  -o-animation: transition 2s linear infinite alternate;
+  animation: transition 2s linear infinite alternate;
+}
+
+a.splash {
+  color:white;
+  text-decoration: none;
+}
+
+a:hover {
+  -webkit-animation: Flash .2s linear infinite alternate;
+  -moz-animation: Flash .2s linear infinite alternate;
+  -o-animation: Flash .2s linear infinite alternate;
+  animation: Flash .2s linear infinite;
+}
+
+
+-webkit-@keyframes Flash { to { -webkit-color: green;} }
+-moz-@keyframes Flash { to { -moz-color: green;} }
+-o-@keyframes Flash { to { -o-color: green;} }
+@keyframes Flash { to { color: green;} }
+
+-webkit-@keyframes transition { to { background-image: url('img/184.gif');} }
+-moz-@keyframes transition { to { background-image: url('img/184.gif');} }
+-o-@keyframes transition { to { background-image: url('img/184.gif');} }
+@keyframes transition { to { background-image: url('img/184.gif');} }
+
+.parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 50vw;
+}
+
+.invisible {
+  display: none;
+}
+
+/*faves*/
+
+.faves {
+  width:45vw;
+}
+
+.fwrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+
+.f1 {
+  width:45vw;
+  height:45vh;
+  background-image: url("img/4.gif");
+  background-repeat: repeat;
+  margin-bottom: 15vh;
+}
+.f2 {
+  width:45vw;
+  height:45vh;
+  background-image: url("img/70.gif");
+  background-repeat: repeat;
+  margin-bottom: 15vh;
+}
+.f3 {
+  width:45vw;
+  height:45vh;
+  background-image: url("img/109.gif");
+  background-repeat: repeat;
+  margin-bottom: 15vh;
+}
+.f4 {
+  width:45vw;
+  height:45vh;
+  background-image: url("img/120.gif");
+  background-repeat: repeat;
+  margin-bottom: 15vh;
+}
+.f5 {
+  width:45vw;
+  height:45vh;
+  background-image: url("img/160.gif");
+  background-repeat: repeat;
+  margin-bottom: 15vh;
+}
+.f6 {
+  width:45vw;
+  height:45vh;
+  background-image: url("img/157.gif");
+  background-repeat: repeat;
+  margin-bottom: 15vh;
+}
+.f7 {
+  width:45vw;
+  height:45vh;
+  background-image: url("img/41.gif");
+  background-repeat: repeat;
+  margin-bottom: 15vh;
+}
+.f8 {
+  width:45vw;
+  height:45vh;
+  background-image: url("img/42.gif");
+  background-repeat: repeat;
+  margin-bottom: 15vh;
+}
+.f9 {
+  width:45vw;
+  height:45vh;
+  background-image: url("img/75.gif");
+  background-repeat: repeat;
+  margin-bottom: 15vh;
+}
+.f10 {
+  width:45vw;
+  height:45vh;
+  background-image: url("img/31.gif");
+  background-repeat: repeat;
+  margin-bottom: 15vh;
+}

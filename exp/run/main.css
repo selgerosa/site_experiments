@@ -1,0 +1,48 @@
+html {
+  cursor: url('1.png'), crosshair;
+}
+body {
+  margin: 0;
+}
+.parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.child {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  background-color: blue;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+}
+
+#placeholder {
+  position: absolute;
+  top: 1000px;
+}
+#placeholder2 {
+  position: absolute;
+  top: 1500px;
+  left: 40px;
+}
+#placeholder3 {
+  position: absolute;
+  top: 3000px;
+  right: 300px;
+}
+#placeholder4 {
+  position: absolute;
+  top: 5000px;
+  right: 500px;
+}
