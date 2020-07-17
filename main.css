@@ -1,12 +1,11 @@
-h1 {
-  font-size:20vh
+h1 {font-size:20vh } h2,p {font-size: 10vh} body { margin: 2vh 2vw; font-family: "TimesNewBastard-RegularWeb", serif; }
+@font-face {
+font-family: "TimesNewBastard-RegularWeb";
+  src: url("TimesNewBastard-RegularWeb.ttf") format('ttf'),
+       url("TimesNewBastard-RegularWeb.woff")  format('woff'),
+       url("TimesNewBastard-RegularWeb.woff2")  format('woff2');
+  font-weight:normal;
+  font-feature-settings: "kern" on, "liga" on;
+  text-rendering: optimizeLegibility;
 }
-h2 {
-  font-size: 10vh
-}
-p {
-  font-size: 10vh
-}
-body {
-  margin: 2vh 2vw
-}
+@media all and (max-width:500px) {h1{font-size: 13vh} h2,p{font-size: 7vh}}
