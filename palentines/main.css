@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+body {
+  font-family: 'Rye', cursive;
+  padding:2vh 2vw;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow-x: hidden;
+  background-image:url(hearts.gif);
+  background-repeat: repeat-x;
+  margin-top: 5vh
+}
+a { color: hotpink}
+a:visited,a:hover {color:deeppink}
+a:hover {text-decoration: line-through;}
+h1 {font-size: 3em}
+h2 {font-size: 2em}
+h3 {font-size: 1.5em}
+h4 {font-size: 1.3em}
+p,h2,h3,h4, h1 {margin-bottom:0; background-color:white;}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.col {
+  width: 40vw;
+  display: flex;
+  padding: 2vw;
+  flex-direction:column;
+
+}
+* {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat991.cur), auto !important;}
+
+@media (min-width:768px) {
+  .col {
+    width: 26vw
+  }
+}
+@media (min-width:1080px) {
+  .col {
+    width: 18vw
+  }
+}
