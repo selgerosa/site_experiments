@@ -25,8 +25,8 @@ p,h2,h3,h4, h1 {margin-bottom:0; background-color:white;}
   flex-direction: row;
 }
 img {align-self: center;}
+.col, .col img {  width: 40vw;}
 .col {
-  width: 40vw;
   display: flex;
   padding: 2vw;
   flex-direction:column;
@@ -35,12 +35,12 @@ img {align-self: center;}
 * {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat991.cur), auto !important;}
 
 @media (min-width:768px) {
-  .col {
+  .col, .col img {
     width: 26vw
   }
 }
 @media (min-width:1080px) {
-  .col {
+  .col, .col img {
     width: 18vw
   }
 }
