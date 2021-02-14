@@ -24,7 +24,7 @@ p,h2,h3,h4, h1 {margin-bottom:0; background-color:white;}
   flex-wrap: wrap;
   flex-direction: row;
 }
-
+img {align-self: center;}
 .col {
   width: 40vw;
   display: flex;
